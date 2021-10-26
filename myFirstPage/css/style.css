@@ -1,0 +1,158 @@
+/* GENERAL STYLES*/
+body{
+  font-family: Arial, San-Serif;
+  font-size: 100%;
+  position: relative;
+}
+.container{
+  margin: auto;
+  width: 960px;
+  display: block;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+p{
+  font-size: 13px;
+  line-height: 1.3em;
+}
+
+/* HEADER*/
+
+.header {
+  padding: 20px 0px;
+  background-color: yellowgreen;
+  position: sticky;
+}
+
+
+.header h1, 
+.header h2{
+  color: rgb(1, 2, 1);
+  text-align: center;
+  font-size: 50px;
+  font-family: "URW Gothic L";
+}
+
+/* NAVIGATION*/
+.page-navigation{
+  background-color: #222;
+  border-color: #101010;
+  min-height: 64px;
+  
+}
+.page-navigation li{
+  float: left;
+  width: 100px;
+}
+.page-navigation a{
+  display: block;
+  color: #9d9d9d;
+  line-height: 4em;
+  font-weight: bold;
+  text-align: center; 
+}
+.page-navigation li a:hover { /* наведение на кнопки навигации*/
+  color: yellowgreen;
+  background-color: black;
+}
+/* LOGIN FORM*/
+.Login{
+  padding: 15px 0;
+  float: right;
+}
+.Login input[type="text"],
+.Login input[type="password"]{
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid transparent; /* прозрачная граница*/
+  border-radius: 5px;
+  outline: none; /* убираем обводку*/
+}
+
+.Login input[type="submit"]{
+  padding: 5px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.Login input[type="submit"]:hover, button:hover{
+  color: white;
+  background-color: darkgrey;
+}
+
+/*MAIN PART*/
+.collections{
+  overflow: hidden;
+  float: left;
+  max-height: 405px;
+  margin-bottom: 10px;
+}
+.collections > div:first-child{
+padding-right: 5px;
+padding-left: 0;
+}
+.collections > div:last-child{
+padding-left: 5px;
+padding-right: 0;
+}
+
+.collection-title{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+  font-size: 36px;
+}
+.collection-title small{
+  color: #777;
+  font-size: 70%;
+}
+.collection-item-outer{
+  display: inline-block;
+  float: left;  
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 33.3%;
+  box-sizing: border-box;
+}
+.collection-item{
+  border: 1px solid #959595;
+  max-height: 405px;
+}
+.collection-item img,
+.collection-item video{
+  width: 100%;
+}
+.collection-text {
+  padding: 0 20px 20px 20px;
+}
+.collection-text h3{
+  color: yellowgreen;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.collection-text p{
+height: 65px;
+overflow: hidden;
+}
+.collection-text button{
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+
+/*FOOTER*/
+  
+.footer{
+  padding-top:15px;
+  background-color: yellowgreen;
+  color:white;
+}
